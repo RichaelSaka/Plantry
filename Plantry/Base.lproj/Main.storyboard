@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m4b-Hj-tli">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic-Regular.ttf">
+            <string>DidactGothic-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Plantry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plantry white bg logo" translatesAutoresizingMaskIntoConstraints="NO" id="DQC-wk-06D">
+                                <rect key="frame" x="28" y="165" width="358" height="551"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbr-M9-JbM">
+                                <rect key="frame" x="67" y="709" width="280" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="begin">
+                                    <fontDescription key="titleFontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="35"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0LS-Db-57Q" kind="push" id="5Yf-kQ-MVw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WLv-xL-2Vp"/>
+                    <connections>
+                        <outlet property="beginButton" destination="Jbr-M9-JbM" id="sj6-9z-jsB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.057971014493" y="126.5625"/>
+        </scene>
+        <!--home -->
+        <scene sceneID="CG6-Y1-p3X">
+            <objects>
+                <viewController id="CmH-JX-hxm" customClass="HomeScreenViewController" customModule="Plantry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D3M-TY-gIj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="your garden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpZ-el-BmT">
+                                <rect key="frame" x="20" y="61" width="194" height="47"/>
+                                <fontDescription key="fontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tDS-Zh-NA5">
+                                <rect key="frame" x="-13" y="152" width="434" height="744"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="datacell" rowHeight="300" id="8QS-9R-6bf" customClass="PlantTableViewCell" customModule="Plantry" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="434" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8QS-9R-6bf" id="g3g-x7-FVX">
+                                            <rect key="frame" x="0.0" y="0.0" width="434" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="POD-Xd-OUe">
+                                                    <rect key="frame" x="33" y="11" width="374" height="263.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gUL-NV-66H">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="ggA-j0-eJZ"/>
+                                                                <constraint firstAttribute="width" constant="374" id="xzk-s6-b9U"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-vs-Cp5">
+                                                            <rect key="frame" x="0.0" y="205" width="109.5" height="58.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plant name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7S-OK-8W8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="23"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkE-gz-pJ1">
+                                                                    <rect key="frame" x="0.0" y="34" width="49" height="24.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24.5" id="urO-cb-WDH"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="21"/>
+                                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="gUL-NV-66H" firstAttribute="trailing" secondItem="POD-Xd-OUe" secondAttribute="trailingMargin" id="t4H-tr-1LE"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="POD-Xd-OUe" secondAttribute="bottom" constant="14.5" id="SZO-IP-m6O"/>
+                                                <constraint firstItem="POD-Xd-OUe" firstAttribute="top" secondItem="g3g-x7-FVX" secondAttribute="topMargin" id="eNM-RY-aEm"/>
+                                                <constraint firstItem="POD-Xd-OUe" firstAttribute="leading" secondItem="g3g-x7-FVX" secondAttribute="leadingMargin" constant="13" id="rcg-1I-fUD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="plantImage" destination="gUL-NV-66H" id="9Io-Rc-UGu"/>
+                                            <outlet property="plantNameLabel" destination="k7S-OK-8W8" id="Yee-ZL-4aT"/>
+                                            <outlet property="plantPlaceLabel" destination="lkE-gz-pJ1" id="NdP-z7-0Eb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CmH-JX-hxm" id="aeY-b2-f1e"/>
+                                    <outlet property="delegate" destination="CmH-JX-hxm" id="b5W-So-kN5"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7N-7D-5Zg" userLabel="Add Button ">
+                                <rect key="frame" x="323" y="61" width="58" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="k9R-P1-zum"/>
+                                    <constraint firstAttribute="width" constant="58" id="kYI-fy-CiD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="add button" imagePadding="0.0"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oCY-2j-VCV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tDS-Zh-NA5" secondAttribute="trailing" constant="-27" id="1dz-PG-mam"/>
+                            <constraint firstItem="tDS-Zh-NA5" firstAttribute="top" secondItem="J7N-7D-5Zg" secondAttribute="bottom" constant="22" id="6gX-Nh-Wx3"/>
+                            <constraint firstItem="J7N-7D-5Zg" firstAttribute="top" secondItem="oCY-2j-VCV" secondAttribute="top" constant="17" id="Al7-KB-sti"/>
+                            <constraint firstItem="J7N-7D-5Zg" firstAttribute="top" secondItem="hpZ-el-BmT" secondAttribute="top" id="CXO-iP-Hge"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tDS-Zh-NA5" secondAttribute="bottom" constant="-83" id="HKn-v6-jjR"/>
+                            <constraint firstItem="oCY-2j-VCV" firstAttribute="trailing" secondItem="J7N-7D-5Zg" secondAttribute="trailing" constant="33" id="mba-1v-fXf"/>
+                            <constraint firstItem="J7N-7D-5Zg" firstAttribute="leading" secondItem="hpZ-el-BmT" secondAttribute="trailing" constant="61" id="wgp-00-isR"/>
+                            <constraint firstItem="tDS-Zh-NA5" firstAttribute="leading" secondItem="D3M-TY-gIj" secondAttribute="leadingMargin" constant="-33" id="x6X-cu-ofq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="home " id="dLe-ht-MDy"/>
+                    <navigationItem key="navigationItem" id="P9t-Hu-7fw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9r-EX-QPQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3653.6231884057975" y="-188.16964285714286"/>
+        </scene>
+        <!--scan your plant -->
+        <scene sceneID="UN1-Gr-gDB">
+            <objects>
+                <viewController id="Npk-te-lEe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1b-dc-fFr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9Oq-S0-TCv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="scan your plant " id="yGG-fy-wlg" userLabel="scan a plant "/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNy-Q8-jl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3786.9565217391309" y="850.44642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ibS-af-qBa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="m4b-Hj-tli" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ckE-tv-uZT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wQm-0T-Fbo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQF-4F-BWz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.913043478261" y="126.5625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="V7Y-EC-EgE">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0LS-Db-57Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="5we-qv-Wf9"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WEl-2i-W3M">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CmH-JX-hxm" kind="relationship" relationship="viewControllers" id="QOQ-nn-jqx"/>
+                        <segue destination="Npk-te-lEe" kind="relationship" relationship="viewControllers" id="X7L-eR-eg1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drA-J1-Onh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2834.7826086956525" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add button" width="65" height="63"/>
+        <image name="plantry white bg logo" width="344" height="500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
