@@ -142,6 +142,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="add button" imagePadding="0.0"/>
+                                <connections>
+                                    <segue destination="B0z-Rb-FGh" kind="presentation" identifier="addPlantSegue" modalPresentationStyle="overCurrentContext" id="xUV-ke-OLA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oCY-2j-VCV"/>
@@ -159,10 +162,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="home " id="dLe-ht-MDy"/>
                     <navigationItem key="navigationItem" id="P9t-Hu-7fw"/>
+                    <connections>
+                        <outlet property="tableView" destination="tDS-Zh-NA5" id="RKH-kt-glm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9r-EX-QPQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3653.6231884057975" y="-188.16964285714286"/>
+            <point key="canvasLocation" x="3768" y="-204"/>
         </scene>
         <!--scan your plant -->
         <scene sceneID="UN1-Gr-gDB">
@@ -216,6 +222,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drA-J1-Onh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2834.7826086956525" y="126.5625"/>
+        </scene>
+        <!--Form View Controller-->
+        <scene sceneID="zRH-Nu-Nej">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="B0z-Rb-FGh" customClass="formViewController" customModule="Plantry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APF-ai-abm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjP-58-6Zx">
+                                <rect key="frame" x="27" y="70" width="361" height="665"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add new plant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEz-Uk-kBt">
+                                        <rect key="frame" x="18" y="-16" width="109" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOs-c7-tAD">
+                                        <rect key="frame" x="24" y="605" width="108" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="B0z-Rb-FGh" eventType="touchUpInside" id="K4c-1S-mJR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L2-LD-xGm">
+                                        <rect key="frame" x="227" y="605" width="107" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="B0z-Rb-FGh" eventType="touchUpInside" id="Jq5-lR-Ssf"/>
+                                            <action selector="save:" destination="B0z-Rb-FGh" eventType="touchUpInside" id="9kb-Vj-mJ5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwO-bO-aHe">
+                                        <rect key="frame" x="89" y="170" width="160" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Pick Photo"/>
+                                        <connections>
+                                            <action selector="addImage:" destination="B0z-Rb-FGh" eventType="touchUpInside" id="KBR-7E-rnR"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lk6-f4-W3r">
+                                        <rect key="frame" x="75" y="267" width="189" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRr-DV-ktI">
+                                        <rect key="frame" x="24" y="50" width="290" height="34"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plant location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="at1-Oe-uhn">
+                                        <rect key="frame" x="24" y="111" width="290" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="74O-lN-7CB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.3991860901" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelbutton" destination="gOs-c7-tAD" id="Tac-uu-EaS"/>
+                        <outlet property="pickPhoto" destination="KwO-bO-aHe" id="Lub-Sj-L2h"/>
+                        <outlet property="plantlocation" destination="at1-Oe-uhn" id="074-Ph-Cwb"/>
+                        <outlet property="savebutton" destination="2L2-LD-xGm" id="N5Y-hw-TRf"/>
+                        <outlet property="showImage" destination="lk6-f4-W3r" id="9RY-HE-RKe"/>
+                        <outlet property="textfield1" destination="pRr-DV-ktI" id="KAl-6u-uqV"/>
+                        <outlet property="titleLabel" destination="LEz-Uk-kBt" id="bTZ-am-klS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oal-hM-ozc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4518.840579710145" y="-188.16964285714286"/>
         </scene>
     </scenes>
     <resources>

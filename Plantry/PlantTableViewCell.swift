@@ -14,6 +14,7 @@ class PlantTableViewCell: UITableViewCell {
     
     //name and area of the plant ex: Front Yard, Backyard etc.
     @IBOutlet weak var plantNameLabel: UILabel!
+    
     @IBOutlet weak var plantPlaceLabel: UILabel!
     
     
