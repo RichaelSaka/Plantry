@@ -10,6 +10,8 @@
 		372EF37B2724D5DC00A8D7F6 /* formViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372EF37A2724D5DC00A8D7F6 /* formViewController.swift */; };
 		80780809271347880085C75B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80780808271347880085C75B /* HomeScreenViewController.swift */; };
 		80E9D897271C746B00F3B1D1 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D896271C746B00F3B1D1 /* PlantTableViewCell.swift */; };
+		80E9D89D2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */; };
+		80E9D89F2727996900F3B1D1 /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D89E2727996900F3B1D1 /* RecommendationsViewController.swift */; };
 		80F80B472701363300455939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F80B462701363300455939 /* AppDelegate.swift */; };
 		80F80B492701363300455939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F80B482701363300455939 /* SceneDelegate.swift */; };
 		80F80B4B2701363300455939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F80B4A2701363300455939 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 		372EF37A2724D5DC00A8D7F6 /* formViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formViewController.swift; sourceTree = "<group>"; };
 		80780808271347880085C75B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		80E9D896271C746B00F3B1D1 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
+		80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendatonsTableViewCell.swift; sourceTree = "<group>"; };
+		80E9D89E2727996900F3B1D1 /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 		80F80B432701363300455939 /* Plantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F80B462701363300455939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F80B482701363300455939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				80F80B482701363300455939 /* SceneDelegate.swift */,
 				80F80B4A2701363300455939 /* ViewController.swift */,
 				80F80B4C2701363300455939 /* Main.storyboard */,
+				80E9D89E2727996900F3B1D1 /* RecommendationsViewController.swift */,
+				80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */,
 				372EF37A2724D5DC00A8D7F6 /* formViewController.swift */,
 				80E9D896271C746B00F3B1D1 /* PlantTableViewCell.swift */,
 				80780808271347880085C75B /* HomeScreenViewController.swift */,
@@ -161,8 +167,10 @@
 			files = (
 				80F80B4B2701363300455939 /* ViewController.swift in Sources */,
 				80E9D897271C746B00F3B1D1 /* PlantTableViewCell.swift in Sources */,
+				80E9D89D2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift in Sources */,
 				372EF37B2724D5DC00A8D7F6 /* formViewController.swift in Sources */,
 				80780809271347880085C75B /* HomeScreenViewController.swift in Sources */,
+				80E9D89F2727996900F3B1D1 /* RecommendationsViewController.swift in Sources */,
 				80F80B472701363300455939 /* AppDelegate.swift in Sources */,
 				80F80B492701363300455939 /* SceneDelegate.swift in Sources */,
 			);
