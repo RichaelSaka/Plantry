@@ -182,13 +182,22 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJP-PZ-w9y">
                                 <rect key="frame" x="3" y="57" width="409" height="159"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="scanbutton"/>
+                                <buttonConfiguration key="configuration" style="plain" image="scanbutton" title=""/>
                                 <connections>
                                     <segue destination="jv9-vx-XOH" kind="showDetail" id="sVw-9K-tSF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdV-fl-d3d">
+                                <rect key="frame" x="20" y="207" width="374" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Scan Citrus for diseases"/>
+                                <connections>
+                                    <segue destination="Z9o-VR-sfN" kind="showDetail" id="CoV-cV-smT"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m3e-dE-DWE">
-                                <rect key="frame" x="-11" y="224" width="425" height="672"/>
+                                <rect key="frame" x="-11" y="272" width="425" height="624"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -499,6 +508,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oal-hM-ozc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4518.840579710145" y="-188.16964285714286"/>
+        </scene>
+        <!--Citrus View Controller-->
+        <scene sceneID="u3f-VL-KtT">
+            <objects>
+                <viewController id="Z9o-VR-sfN" customClass="citrusViewController" customModule="Plantry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KZG-ei-ULB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hsT-LC-wXz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kAf-V6-Cfh" appends="YES" id="dtE-fR-e9q"/>
+                                    <outletCollection property="gestureRecognizers" destination="rPm-SQ-MEx" appends="YES" id="xAP-fT-Aw1"/>
+                                </connections>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="11i-4c-DHR" userLabel="Prediction View">
+                                <rect key="frame" x="20" y="741.5" width="188" height="60.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Predictions go here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDp-1I-dDB" userLabel="Prediction Label">
+                                        <rect key="frame" x="20" y="20" width="148" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oDp-1I-dDB" secondAttribute="trailing" constant="20" symbolic="YES" id="UV2-fF-dIP"/>
+                                    <constraint firstItem="oDp-1I-dDB" firstAttribute="top" secondItem="11i-4c-DHR" secondAttribute="top" constant="20" symbolic="YES" id="dmV-jh-0pg"/>
+                                    <constraint firstAttribute="bottom" secondItem="oDp-1I-dDB" secondAttribute="bottom" constant="20" symbolic="YES" id="lUt-3z-WrV"/>
+                                    <constraint firstItem="oDp-1I-dDB" firstAttribute="leading" secondItem="11i-4c-DHR" secondAttribute="leading" constant="20" symbolic="YES" id="tK2-zd-ymm"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xyn-3b-x3Q" userLabel="Startup Prompts">
+                                <rect key="frame" x="68" y="269" width="278.5" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One finger tap for camera." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tne-Zn-Ygc" userLabel="Startup Prompt Label1">
+                                        <rect key="frame" x="0.0" y="0.0" width="278.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two finger tap for photos." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvh-pD-5Kk" userLabel="Startup Prompt Label 2">
+                                        <rect key="frame" x="0.0" y="38" width="278.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oaY-3k-ToZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hsT-LC-wXz" firstAttribute="centerY" secondItem="KZG-ei-ULB" secondAttribute="centerY" id="Af2-7i-zJX"/>
+                            <constraint firstItem="Xyn-3b-x3Q" firstAttribute="centerX" secondItem="oaY-3k-ToZ" secondAttribute="centerX" id="Bpv-6u-g3V"/>
+                            <constraint firstItem="11i-4c-DHR" firstAttribute="leading" secondItem="KZG-ei-ULB" secondAttribute="leading" constant="20" id="Ely-1e-YSL"/>
+                            <constraint firstItem="Xyn-3b-x3Q" firstAttribute="centerY" secondItem="oaY-3k-ToZ" secondAttribute="centerY" multiplier="0.75" id="F0r-Wh-1mg"/>
+                            <constraint firstItem="hsT-LC-wXz" firstAttribute="trailing" secondItem="KZG-ei-ULB" secondAttribute="trailing" id="XDW-WO-fxy"/>
+                            <constraint firstItem="11i-4c-DHR" firstAttribute="bottom" secondItem="hsT-LC-wXz" secondAttribute="bottom" constant="-40" id="bAF-bo-CRh"/>
+                            <constraint firstItem="hsT-LC-wXz" firstAttribute="leading" secondItem="KZG-ei-ULB" secondAttribute="leading" id="ftC-Fb-XeD"/>
+                            <constraint firstItem="hsT-LC-wXz" firstAttribute="top" secondItem="KZG-ei-ULB" secondAttribute="top" id="xj0-os-cuT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hsT-LC-wXz" id="Ksa-Nm-6Si"/>
+                        <outlet property="predictionLabel" destination="oDp-1I-dDB" id="Xz3-is-HQu"/>
+                        <outlet property="startupPrompts" destination="Xyn-3b-x3Q" id="sg6-7J-oKM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHM-ca-6RG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTouchesRequired="2" id="kAf-V6-Cfh" userLabel="double tap Recognizer">
+                    <connections>
+                        <action selector="doubleTap" destination="Z9o-VR-sfN" id="lnU-7g-wfr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rPm-SQ-MEx" userLabel="Single tap Recognizer">
+                    <connections>
+                        <action selector="singleTap" destination="Z9o-VR-sfN" id="yoj-90-9si"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4412" y="1471"/>
         </scene>
     </scenes>
     <resources>
