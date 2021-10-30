@@ -74,5 +74,16 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     
     // UI stuff - hiding the status bar
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "   Harvest!  "){ (contextualAcction, view, actionPerformed: (Bool) -> ()) in
+            HomeScreenViewController.plantNames.remove(at: indexPath.row)
+            HomeScreenViewController.plantImages.remove(at: indexPath.row)
+            HomeScreenViewController.plantPlace.remove(at: indexPath.row)
+        }
+        self.tableView.reloadData()
+        
+        return UISwipeActionsConfiguration(actions: [delete])
+    }
+    
 
 }

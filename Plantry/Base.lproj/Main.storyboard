@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,16 +92,16 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-vs-Cp5">
-                                                            <rect key="frame" x="0.0" y="205" width="109.5" height="58.5"/>
+                                                            <rect key="frame" x="0.0" y="205" width="115" height="58.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plant name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7S-OK-8W8">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="34"/>
                                                                     <fontDescription key="fontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="23"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkE-gz-pJ1">
-                                                                    <rect key="frame" x="0.0" y="34" width="49" height="24.5"/>
+                                                                    <rect key="frame" x="0.0" y="34" width="51" height="24.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="24.5" id="urO-cb-WDH"/>
                                                                     </constraints>
@@ -182,6 +183,9 @@
                                 <rect key="frame" x="3" y="57" width="409" height="159"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="scanbutton"/>
+                                <connections>
+                                    <segue destination="jv9-vx-XOH" kind="showDetail" id="sVw-9K-tSF"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m3e-dE-DWE">
                                 <rect key="frame" x="-11" y="224" width="425" height="672"/>
@@ -211,22 +215,22 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="a0p-UE-Rci">
-                                                            <rect key="frame" x="140" y="0.0" width="106.5" height="86"/>
+                                                            <rect key="frame" x="140" y="0.0" width="106.5" height="77.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPT-RU-T6y">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="28"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="24.5"/>
                                                                     <fontDescription key="fontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="21"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plant fact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-M5-6Cp">
-                                                                    <rect key="frame" x="0.0" y="32" width="75.5" height="25"/>
+                                                                    <rect key="frame" x="0.0" y="28.5" width="80" height="22.5"/>
                                                                     <fontDescription key="fontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="19"/>
                                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plant fact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbI-ml-x3h">
-                                                                    <rect key="frame" x="0.0" y="61" width="75.5" height="25"/>
+                                                                    <rect key="frame" x="0.0" y="55" width="80" height="22.5"/>
                                                                     <fontDescription key="fontDescription" name="DidactGothic-Regular" family="Didact Gothic" pointSize="19"/>
                                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -273,6 +277,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNy-Q8-jl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3786.9565217391309" y="850.44642857142856"/>
+        </scene>
+        <!--Plantdetection View Controller-->
+        <scene sceneID="s55-Z5-zGc">
+            <objects>
+                <viewController id="jv9-vx-XOH" customClass="plantdetectionViewController" customModule="Plantry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PFk-pu-GI9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mjp-UH-OfI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="34C-ok-FlB" appends="YES" id="X6F-Uf-zMg"/>
+                                    <outletCollection property="gestureRecognizers" destination="nyt-ey-jXj" appends="YES" id="Zuo-NF-58b"/>
+                                </connections>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="dST-ii-1IR" userLabel="Prediction View">
+                                <rect key="frame" x="20" y="741.5" width="188" height="60.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Predictions go here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSr-3n-OKa" userLabel="Prediction Label">
+                                        <rect key="frame" x="20" y="20" width="148" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kSr-3n-OKa" secondAttribute="bottom" constant="20" symbolic="YES" id="1c0-qS-SFP"/>
+                                    <constraint firstItem="kSr-3n-OKa" firstAttribute="leading" secondItem="dST-ii-1IR" secondAttribute="leading" constant="20" symbolic="YES" id="gKl-pQ-BSZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kSr-3n-OKa" secondAttribute="trailing" constant="20" symbolic="YES" id="jeT-KB-nd2"/>
+                                    <constraint firstItem="kSr-3n-OKa" firstAttribute="top" secondItem="dST-ii-1IR" secondAttribute="top" constant="20" symbolic="YES" id="kSG-4e-vWo"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GgN-SJ-mde" userLabel="Startup Prompts">
+                                <rect key="frame" x="68" y="269" width="278.5" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One finger tap for camera." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkH-rS-LJo" userLabel="Startup Prompt Label1">
+                                        <rect key="frame" x="0.0" y="0.0" width="278.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two finger tap for photos." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrq-OX-5hl" userLabel="Startup Prompt Label 2">
+                                        <rect key="frame" x="0.0" y="38" width="278.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hvU-iN-ZOY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dST-ii-1IR" firstAttribute="leading" secondItem="PFk-pu-GI9" secondAttribute="leading" constant="20" id="2EE-yv-ISB"/>
+                            <constraint firstItem="GgN-SJ-mde" firstAttribute="centerX" secondItem="hvU-iN-ZOY" secondAttribute="centerX" id="2hd-rz-tOu"/>
+                            <constraint firstItem="Mjp-UH-OfI" firstAttribute="top" secondItem="PFk-pu-GI9" secondAttribute="top" id="9XU-Ky-MeG"/>
+                            <constraint firstItem="Mjp-UH-OfI" firstAttribute="centerY" secondItem="PFk-pu-GI9" secondAttribute="centerY" id="Kxh-1W-LFe"/>
+                            <constraint firstItem="Mjp-UH-OfI" firstAttribute="leading" secondItem="PFk-pu-GI9" secondAttribute="leading" id="QA5-l5-NAc"/>
+                            <constraint firstItem="Mjp-UH-OfI" firstAttribute="trailing" secondItem="PFk-pu-GI9" secondAttribute="trailing" id="TLX-G2-V2l"/>
+                            <constraint firstItem="GgN-SJ-mde" firstAttribute="centerY" secondItem="hvU-iN-ZOY" secondAttribute="centerY" multiplier="0.75" id="dGH-xF-gBC"/>
+                            <constraint firstItem="dST-ii-1IR" firstAttribute="bottom" secondItem="Mjp-UH-OfI" secondAttribute="bottom" constant="-40" id="gvc-Pw-Eyc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Mjp-UH-OfI" id="zXk-t0-BxW"/>
+                        <outlet property="predictionLabel" destination="kSr-3n-OKa" id="AWv-rm-wXc"/>
+                        <outlet property="startupPrompts" destination="GgN-SJ-mde" id="gG3-a9-DbB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mK2-7G-zm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTouchesRequired="2" id="34C-ok-FlB" userLabel="double tap Recognizer">
+                    <connections>
+                        <action selector="doubleTap" destination="jv9-vx-XOH" id="ky5-en-JWH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nyt-ey-jXj" userLabel="Single tap Recognizer">
+                    <connections>
+                        <action selector="singleTap" destination="jv9-vx-XOH" id="krw-d2-S3E"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4686.9565217391309" y="805.58035714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ibS-af-qBa">
@@ -421,6 +507,9 @@
         <image name="scanbutton" width="385" height="145"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

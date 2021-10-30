@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		372EF37B2724D5DC00A8D7F6 /* formViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372EF37A2724D5DC00A8D7F6 /* formViewController.swift */; };
+		37E2DB35272D91CE008DB3A9 /* PlantryGetPlant.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB34272D91CE008DB3A9 /* PlantryGetPlant.mlmodel */; };
+		37E2DB37272D93CF008DB3A9 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB36272D93CF008DB3A9 /* ImagePredictor.swift */; };
+		37E2DB39272D98CE008DB3A9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB38272D98CE008DB3A9 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		37E2DB3B272D98D6008DB3A9 /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB3A272D98D6008DB3A9 /* VNClassificationObservation+confidenceString.swift */; };
+		37E2DB3D272D99B1008DB3A9 /* plantdetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB3C272D99B1008DB3A9 /* plantdetectionViewController.swift */; };
+		37E2DB3F272D9AB2008DB3A9 /* plantdetectionViewController+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB3E272D9AB1008DB3A9 /* plantdetectionViewController+PhotoPicker.swift */; };
+		37E2DB41272D9AFC008DB3A9 /* plantdetectionViewController+CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB40272D9AFC008DB3A9 /* plantdetectionViewController+CameraPicker.swift */; };
 		80780809271347880085C75B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80780808271347880085C75B /* HomeScreenViewController.swift */; };
 		80E9D897271C746B00F3B1D1 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D896271C746B00F3B1D1 /* PlantTableViewCell.swift */; };
 		80E9D89D2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */; };
@@ -23,6 +30,13 @@
 
 /* Begin PBXFileReference section */
 		372EF37A2724D5DC00A8D7F6 /* formViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formViewController.swift; sourceTree = "<group>"; };
+		37E2DB34272D91CE008DB3A9 /* PlantryGetPlant.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PlantryGetPlant.mlmodel; sourceTree = "<group>"; };
+		37E2DB36272D93CF008DB3A9 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		37E2DB38272D98CE008DB3A9 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		37E2DB3A272D98D6008DB3A9 /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
+		37E2DB3C272D99B1008DB3A9 /* plantdetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantdetectionViewController.swift; sourceTree = "<group>"; };
+		37E2DB3E272D9AB1008DB3A9 /* plantdetectionViewController+PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "plantdetectionViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
+		37E2DB40272D9AFC008DB3A9 /* plantdetectionViewController+CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "plantdetectionViewController+CameraPicker.swift"; sourceTree = "<group>"; };
 		80780808271347880085C75B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		80E9D896271C746B00F3B1D1 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendatonsTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +87,13 @@
 				80F80B482701363300455939 /* SceneDelegate.swift */,
 				80F80B4A2701363300455939 /* ViewController.swift */,
 				80F80B4C2701363300455939 /* Main.storyboard */,
+				37E2DB3C272D99B1008DB3A9 /* plantdetectionViewController.swift */,
+				37E2DB3E272D9AB1008DB3A9 /* plantdetectionViewController+PhotoPicker.swift */,
+				37E2DB40272D9AFC008DB3A9 /* plantdetectionViewController+CameraPicker.swift */,
+				37E2DB34272D91CE008DB3A9 /* PlantryGetPlant.mlmodel */,
+				37E2DB36272D93CF008DB3A9 /* ImagePredictor.swift */,
+				37E2DB38272D98CE008DB3A9 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				37E2DB3A272D98D6008DB3A9 /* VNClassificationObservation+confidenceString.swift */,
 				80E9D89E2727996900F3B1D1 /* RecommendationsViewController.swift */,
 				80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */,
 				372EF37A2724D5DC00A8D7F6 /* formViewController.swift */,
@@ -166,13 +187,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F80B4B2701363300455939 /* ViewController.swift in Sources */,
+				37E2DB35272D91CE008DB3A9 /* PlantryGetPlant.mlmodel in Sources */,
 				80E9D897271C746B00F3B1D1 /* PlantTableViewCell.swift in Sources */,
 				80E9D89D2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift in Sources */,
+				37E2DB3F272D9AB2008DB3A9 /* plantdetectionViewController+PhotoPicker.swift in Sources */,
+				37E2DB3D272D99B1008DB3A9 /* plantdetectionViewController.swift in Sources */,
+				37E2DB37272D93CF008DB3A9 /* ImagePredictor.swift in Sources */,
+				37E2DB3B272D98D6008DB3A9 /* VNClassificationObservation+confidenceString.swift in Sources */,
 				372EF37B2724D5DC00A8D7F6 /* formViewController.swift in Sources */,
+				37E2DB41272D9AFC008DB3A9 /* plantdetectionViewController+CameraPicker.swift in Sources */,
 				80780809271347880085C75B /* HomeScreenViewController.swift in Sources */,
 				80E9D89F2727996900F3B1D1 /* RecommendationsViewController.swift in Sources */,
 				80F80B472701363300455939 /* AppDelegate.swift in Sources */,
 				80F80B492701363300455939 /* SceneDelegate.swift in Sources */,
+				37E2DB39272D98CE008DB3A9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
