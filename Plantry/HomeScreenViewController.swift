@@ -50,7 +50,7 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         //gets the plant area from the plantPlace array and sets the value to the text label
         cell.plantPlaceLabel.text = HomeScreenViewController.plantPlace[indexPath.row]
         let dateFormatter = DateFormatter()
-
+        dateFormatter.dateFormat = "MM, dd, YYYY"
         cell.plantDateLabel.text = dateFormatter.string(from: HomeScreenViewController.plantDates[indexPath.row])
         
         return cell
