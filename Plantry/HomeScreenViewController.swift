@@ -13,6 +13,7 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableView: UITableView!
     //TODO: When user presses plus button, the name of the plant will be stored in this array
     static var plantNames = ["Tomato", "Tomato", "Tomato"]
+    static var plantDates = [Date("2021-06-06"), Date("2021-10-06"), Date("2021-12-06")];
     
     //TODO: When user takes picture or selects one from their gallery, the image name will be appended into this array as a string
     static var plantImages = [UIImage(named:"Tomato"), UIImage(named:"Tomato"), UIImage(named:"Tomato")]
@@ -48,6 +49,9 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         
         //gets the plant area from the plantPlace array and sets the value to the text label
         cell.plantPlaceLabel.text = HomeScreenViewController.plantPlace[indexPath.row]
+        let dateFormatter = DateFormatter()
+
+        cell.plantDateLabel.text = dateFormatter.string(from: HomeScreenViewController.plantDates[indexPath.row])
         
         return cell
         

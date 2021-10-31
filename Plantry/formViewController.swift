@@ -10,6 +10,8 @@ import UIKit
 class formViewController: UIViewController {
 
     @IBOutlet weak var textfield1: UITextField!
+    @IBOutlet weak var datelabel: UILabel!
+    @IBOutlet weak var datepick: UIDatePicker!
     @IBOutlet weak var showImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var plantlocation: UITextField!
@@ -38,6 +40,7 @@ class formViewController: UIViewController {
         HomeScreenViewController.plantNames.append(textfield1.text!)
         HomeScreenViewController.plantImages.append(showImage.image)
         HomeScreenViewController.plantPlace.append(plantlocation.text!)
+        HomeScreenViewController.plantDates.append(datepick.date)
         if let doneSaving = doneSaving {
             doneSaving()
         }

@@ -20,6 +20,7 @@
 		37E2DB47272DE008008DB3A9 /* citrusViewController+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB46272DE007008DB3A9 /* citrusViewController+PhotoPicker.swift */; };
 		37E2DB49272DE048008DB3A9 /* CitrusDiseaseDetection.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB48272DE048008DB3A9 /* CitrusDiseaseDetection.mlmodel */; };
 		37E2DB4B272DE06C008DB3A9 /* CitrusPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB4A272DE06C008DB3A9 /* CitrusPredictor.swift */; };
+		37E2DB4D272EF203008DB3A9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2DB4C272EF203008DB3A9 /* Date.swift */; };
 		80780809271347880085C75B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80780808271347880085C75B /* HomeScreenViewController.swift */; };
 		80E9D897271C746B00F3B1D1 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D896271C746B00F3B1D1 /* PlantTableViewCell.swift */; };
 		80E9D89D2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */; };
@@ -47,6 +48,7 @@
 		37E2DB46272DE007008DB3A9 /* citrusViewController+PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "citrusViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
 		37E2DB48272DE048008DB3A9 /* CitrusDiseaseDetection.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CitrusDiseaseDetection.mlmodel; sourceTree = "<group>"; };
 		37E2DB4A272DE06C008DB3A9 /* CitrusPredictor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitrusPredictor.swift; path = "../../../Downloads/ClassifyingImagesWithVisionAndCoreML/Image Predictor/CitrusPredictor.swift"; sourceTree = "<group>"; };
+		37E2DB4C272EF203008DB3A9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		80780808271347880085C75B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		80E9D896271C746B00F3B1D1 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendatonsTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				37E2DB36272D93CF008DB3A9 /* ImagePredictor.swift */,
 				37E2DB38272D98CE008DB3A9 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				37E2DB3A272D98D6008DB3A9 /* VNClassificationObservation+confidenceString.swift */,
+				37E2DB4C272EF203008DB3A9 /* Date.swift */,
 				80E9D89E2727996900F3B1D1 /* RecommendationsViewController.swift */,
 				80E9D89C2727989D00F3B1D1 /* RecommendatonsTableViewCell.swift */,
 				372EF37A2724D5DC00A8D7F6 /* formViewController.swift */,
@@ -217,6 +220,7 @@
 				80780809271347880085C75B /* HomeScreenViewController.swift in Sources */,
 				37E2DB4B272DE06C008DB3A9 /* CitrusPredictor.swift in Sources */,
 				80E9D89F2727996900F3B1D1 /* RecommendationsViewController.swift in Sources */,
+				37E2DB4D272EF203008DB3A9 /* Date.swift in Sources */,
 				80F80B472701363300455939 /* AppDelegate.swift in Sources */,
 				80F80B492701363300455939 /* SceneDelegate.swift in Sources */,
 				37E2DB43272DDF70008DB3A9 /* citrusViewController.swift in Sources */,
